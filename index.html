@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Seatwork#2</title>
+    <style>
+        body {
+           font-family: 'Courier New', Courier, monospace;
+           color: rgb(221, 229, 233);
+           background-color: rgb(159, 93, 22);
+        }
+
+        div {
+             font-size: 20px;
+        }
+
+        form {
+           background-color: rgb(13, 87, 137);
+           border-radius: 10px;
+           padding: 40px ;
+           margin: 0 auto;
+           width: 700px;
+           text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <marquee><h2>Grade 10 Classmate System</h2></marquee>
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <a>Name:</a>
+        <input type="text" id="input2" placeholder="enter name:">
+        <br>
+        <br>
+        <a>Section:</a>
+        <input type="text" id="input3" placeholder="enter section:">
+        <br>
+        <br>
+        <a>Favorite Subject:</a>
+        <input type="text" id="input1" placeholder="enter favorite subject:">
+        <br>
+        <br>
+        <button type="button" py-click="show_creds" value="addition_student">Add Classmate</button>
+        <br>
+        <br>
+        <button type="button" py-click="show_class" value="show_list">Show Class List</button>
+    </form>
+
+    <br>
+    <br>
+    <form>
+    <div id="output"></div>
+    </form>
+
+    <py-script src="main.py"></py-script>
+    
+</body>
+</html>
